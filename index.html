@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>Gonzalo Durán Tonores</h1>
+      <header>
+        <h1 class="title">Gonzalo Durán Tonores <span>Freelancer</span> </h1>
     </header>
 
     <nav>
@@ -153,27 +155,32 @@
     <section>
       <h2>Contactos</h2>
       <form action="">
-          <fieldset>
-              <legend>
-                  Contáctame llenando todos los  campos
-              </legend>
-              
-              <label>
-                  Nombre
-              </label>
-              <input type="text" placeholder="Tu nombre"/>
+        <fieldset>
+          <legend>Contáctame llenando todos los campos</legend>
+          <div>
+            <label> Nombre </label>
+            <input type="text" placeholder="Tu nombre" />
+          </div>
 
-              <label>
-                  Teléfono
-              </label>
-              <input type="text" placeholder="Tu teléfono"/>
+          <div>
+            <label> Teléfono </label>
+            <input type="text" placeholder="Tu teléfono" />
+          </div>
 
-              <label>
-                  Correo
-              </label>
-              <input type="email" placeholder="Tu Email"/>
+          <div>
+            <label> Correo </label>
+            <input type="email" placeholder="Tu Email" />
+          </div>
 
-          </fieldset>
+          <div>
+            <label> Mensaje </label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </fieldset>
       </form>
     </section>
 
